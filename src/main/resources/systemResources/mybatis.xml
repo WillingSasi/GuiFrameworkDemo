@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration
+        PUBLIC "-//mybatis.org//DTD com.demo.config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+
+    <!-- 配置全局属性 -->
+    <settings>
+        <setting name="defaultExecutorType" value="SIMPLE"/>
+        <setting name="logImpl" value="LOG4J2"/>
+        <setting name="localCacheScope" value="STATEMENT"/>
+        <!--        <setting name="useStatementNamespaces" value="true"/>-->
+        <setting name="cacheEnabled" value="false"/>
+        <setting name="defaultStatementTimeout" value="5"/>
+    </settings>
+
+    <!-- 定义数据库环境，且默认使用development环境 -->
+    <environments default="xxxx">
+        <!-- 定义id为development的数据库环境 -->
+        <environment id="xxxx">
+            <!-- 采用jdbc事务管理 -->
+            <transactionManager type="JDBC"/>
+            <!-- 配置数据库连接信息 -->
+            <dataSource type="POOLED">
+                <property name="driver" value="oracle.jdbc.OracleDriver"/>
+                <property name="url" value="${xxxx}"/>
+                <property name="username" value="${xxxx}"/>
+                <property name="password" value="${xxxx}"/>
+            </dataSource>
+
+        </environment>
+        <environment id="xxxx">
+            <!-- 采用jdbc事务管理 -->
+            <transactionManager type="JDBC"/>
+            <!-- 配置数据库连接信息 -->
+            <dataSource type="POOLED">
+                <property name="driver" value="oracle.jdbc.driver.OracleDriver"/>
+                <property name="url" value="${xxxx}"/>
+                <property name="username" value="${xxxx}"/>
+                <property name="password" value="${xxxx}"/>
+            </dataSource>
+        </environment>
+
+        <environment id="xxxx">
+            <!-- 采用jdbc事务管理 -->
+            <transactionManager type="JDBC"/>
+            <!-- 配置数据库连接信息 -->
+            <dataSource type="POOLED">
+                <property name="driver" value="oracle.jdbc.driver.OracleDriver"/>
+                <property name="url" value="${xxxx}"/>
+                <property name="username" value="${xxxx}"/>
+                <property name="password" value="${xxxx}"/>
+            </dataSource>
+        </environment>
+
+        <environment id="xxxx">
+            <!-- 采用jdbc事务管理 -->
+            <transactionManager type="JDBC"/>
+            <!-- 配置数据库连接信息 -->
+            <dataSource type="POOLED">
+                <property name="driver" value="oracle.jdbc.driver.OracleDriver"/>
+                <property name="url" value="${xxxx}"/>
+                <property name="username" value="${xxxx}"/>
+                <property name="password" value="${xxxx}"/>
+            </dataSource>
+        </environment>
+
+    </environments>
+    <!-- 定义映射器 -->
+    <mappers>
+        <!-- 引入Mapper映射器配置文件 -->
+        <package name="com.demo.dao.mapper"/>
+    </mappers>
+
+</configuration>

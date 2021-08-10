@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Login Test Suite">
+    <test name="Login Test Name">
+        <classes>
+            <class name="com.demo.testWork.testCase.UserLoginTest"></class>
+            <class name="com.demo.testWork.testCase.CustomerLoginTest"></class>
+        </classes>
+<!--        <packages>-->
+<!--            <package name="com.demo.testWork.testCase">-->
+<!--                <include name="Test"></include>-->
+<!--            </package>-->
+<!--        </packages>-->
+    </test>
+</suite>
